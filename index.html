@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- imported font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <!-- import icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,18 +19,52 @@
 <body>
     <header>
         <h2>⨇Rentra</h2>
-        <nav class="menu-mobile"><i class="fa-solid fa-bars"></i></nav>
+
+        <div class="menu-mobile" onclick=showSidebar()>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav>
+            <ul class="menu-desktop">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">FAQS</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <div class="button-container">
+                    <button class="header-button">Login</button>
+                    <button class="header-button">Sign up</button>
+                </div>
+
+            </ul>
+
+            <ul class="sidebar">
+
+                <li onclick=closeSidebar()>
+                    <a href="">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                </li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="">PRICING</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">FAQS</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="hero">
         <div class="hero-content">
             <h2>Manage Your Rental Properties Without Stress</h2>
             <p>Everything landlords need to stay organized, save time, and manage rentals effortlessly.</p>
-            <button>Start Free Trial</button>
+            <button class="free-trial">Start Free Trial</button>
         </div>
 
     </section>
-
+    <script src="./script.js"></script>
 </body>
 
 </html>
