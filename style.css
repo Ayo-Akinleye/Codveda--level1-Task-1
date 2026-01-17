@@ -61,6 +61,7 @@ ul li a {
     height: 100vh;
     width: 250px;
     z-index: 999;
+    padding: 1rem;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -75,7 +76,15 @@ ul li a {
 }
 
 .sidebar li a {
-    color: #187C41;
+    /* color: #187C41; */
+    color: #0c3e05;
+    /* padding: 0 1rem; */
+    border: 1px grey;
+
+}
+
+.sidebar:last-child {
+    margin-top: auto;
 }
 
 .sidebar i {
