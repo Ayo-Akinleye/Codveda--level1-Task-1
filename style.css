@@ -160,6 +160,7 @@ ul li a {
 
 
 /* desktop screen */
+/* @media(min-width: 768px){} */
 @media (min-width: 1023px) {
     .menu-desktop {
         display: flex;
